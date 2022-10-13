@@ -1,6 +1,6 @@
 .calculator {
     max-width: 530px;
-    background-color: beige;
+    background-color: rgb(237, 237, 237);
     padding: 20px;
     border-radius: 10px;
     margin: 10px auto;
@@ -11,8 +11,8 @@ input[type=text] {
     height: 25px;
     border-radius: 5px;
     border: 0px;
-    background-color: #333333;
-    color: #d9d9d9;
+    background-color: #ffffff;
+    color: #000000;
     padding: 0 5px 0 5px;
     margin: 0 0px 10px 84px;
 }
@@ -21,6 +21,7 @@ input[type=text] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-color: black;
 }
 
 .button {
@@ -28,7 +29,7 @@ input[type=text] {
     width: 63px;
     border: none;
     height: 25px;
-    border-radius: 4px;
+    border-radius: 0px;
     color: #000000;
     cursor: pointer;
 }
@@ -53,17 +54,17 @@ button:hover {
 }
 
 .triggers {
-    background-color: #ffc266;
+    background-color: #66abff;
 }
 
 .numbers {
-    background-color: #999999;
+    background-color: #c7c7c7;
 }
 
 .basic-stuff {
-    background-color: #80d4ff;
+    background-color: #989898;
 }
 
 .complex-stuff {
-    background-color: #80ffff;
+    background-color: #989898;
 }

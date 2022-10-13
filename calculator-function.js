@@ -53,7 +53,7 @@ Array.prototype.forEach.call(buttons, function(button) {
             log();
         }else if (button.textContent === "ln") {
             ln();
-        }else if (button.textContent === "x^") {
+        } else if (button.textContent === "x^") {
             exponent();
         }else if (button.textContent === "x !") {
             factorial();
@@ -81,7 +81,7 @@ function equals() {
     if ((display.value).indexOf("^") > -1) {
         var base = (display.value).slice(0, (display.value).indexOf("^"));
         var exponent = (display.value).slice((display.value).indexOf("^") + 1);
-        display.value = eva;("Math.pow(" + base + "," + exponent + ")");
+        display.value = eval("Math.pow(" + base + "," + exponent + ")");
     } else {
         display.value = eval(display.value)
         checkLengh()
@@ -122,17 +122,17 @@ function plusMinus() {
 function factorial() {
     var number = 1;
     if (display.value === 0) {
-    display.value = "1";
-    }else if (display.value < 0){
-        display.value = "undefined";
-    }else {
-        var number = 1;
-        for (var i = display.value; i > 0; i--) {
-            number *=1;
-        }
-        display.value = number;
+      display.value = "1";
+    } else if (display.value < 0) {
+      display.value = "undefined";
+    } else {
+      var number = 1;
+      for (var i = display.value; i > 0; i--) {
+        number *=  i;
+      }
+      display.value = number;
     }
-}
+  }
 
 //Pi function
 function pi() {
@@ -182,7 +182,7 @@ function ln() {
 //Exponenet function
 function exponent() {
     display.value += "^";
-}
+  }
 
 //exp function
 function exp() {
